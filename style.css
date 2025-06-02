@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+
+   
+}
+body{
+    background:#0B0E17;
+    overflow: hidden;
+}
+
+.container1 {
+  background-image: url(./img/bg.jpg);
+  background-size: cover;           
+  background-position: center;
+  width: 100vw;
+  overflow: hidden;
+  height: 145vh;
+}
+.nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: nav;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    position: relative;
+
+}
+@keyframes nav {
+    from{
+        bottom: 10px;
+        right: 0px;
+        opacity: 0;
+        
+    }
+
+    to{
+        bottom: 0px;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.nav1{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+#logo{
+    width: 50px;
+}
+.Silicon{
+     margin-left: -50px;
+    
+   color: aliceblue;
+   font-size: 1.375rem;
+}
+.nav1 a {
+    text-decoration: none; 
+    color: white; 
+    margin-left: -10px;
+}
+#anchor1{
+    text-decoration: none; 
+    color: #6366f1;
+}
+.nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+    padding-top: 15px;
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 0.875em;
+  background-color: #6C63FF;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transform: none;
+  box-shadow: none;
+  transition: none;
+  position: relative;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+.herodrone{
+    width: 1058px;
+    opacity: 1;
+    margin-right:-200px;
+    position: relative;
+    animation-name: herodronerightmovement;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in;
+}
+@keyframes herodronerightmovement {
+    from{
+        top: 0px;
+        right: -500px;
+        opacity: 0;
+        
+    }
+
+    to{
+        top: 0px;
+        right: 0px;
+        opacity: 1;
+    }
+}
+.droneh2{
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    animation-name: herotxt;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-delay: 0ms;
+    position: relative;
+    animation-timing-function: ease-in;
+}
+.droneh1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    opacity: 1;
+    animation-name: herotxt;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    position: relative;
+}
+@keyframes herotxt {
+    from{
+        bottom: 10px;
+        right: 0px;
+        opacity: 0;
+        
+    }
+
+    to{
+        bottom: 0px;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.container2{
+    display: flex;
+    margin-top: 170px;
+    justify-content: space-between;
+
+}
+.container3{
+    margin-left: 110px;
+    
+}
+.btn2{
+    width: 180px;
+    height: 50px;
+    font-size: 1rem;
+    animation-name: btn;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    position: relative;
+
+}
+@keyframes btn {
+    from{
+       
+        opacity: 0;
+        
+    }
+
+    to{
+        
+        opacity: 1;
+    }
+}
+
+
+.btnone{
+    margin-right: 22px;
+}
+.btntwo{
+    background: white;
+    color: black;
+}
+
+.video {
+  position: relative;
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+}
+
+.video input {
+  display: none;
+  
+}
+
+.video label {
+    border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('./img/video-cover.jpg') center/100% no-repeat;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.5;
+  
+}
+
+.video label::after {
+  content: '▶';
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 5px black;
+}
+
+.video iframe {
+   
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+   border-radius: 10px;
+  
+}
+
+.video input:checked ~ iframe {
+  display: block;
+}
+
+.video input:checked + label {
+  display: none;
+}
+.container5{
+    background: #0B0E17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video{
+   
+    width: 1300px;
+    height: 1000px;
+    
+}
+.textt{
+    background: #0B0E17;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 110px;
+    margin-bottom: -40px;
+    
+}
+.textt h1{
+    width: 100%;
+    font-size: 2.5rem;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.textt h2{
+    margin-top: -10px;
+    margin-right: 80px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color:gray;
+}
+.highlight {
+  color:#6366f1; /* Your custom color */
+}
+.smalldrone h1{
+    
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+}
+.smalldrone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smalldrone img{
+    width: 700px;
+    height: 500px;
+    margin-top: 10px;
+}
+.battery{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -450px;
+    margin-left: -1000px;
+}
+.battery img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.battery h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.zoom{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -160px;
+    margin-left: 1000px;
+}
+.zoom img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.zoom h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.idrone{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -1000px;
+}
+.idrone img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.idrone h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.inch{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -165px;
+    margin-left: 1000px;
+}
+.inch img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.inch h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.k{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -1000px;
+}
+.k img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.k h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.temp{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -160px;
+    margin-left: -350px;
+}
+.temp img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.temp h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.light{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -160px;
+    margin-left: 350px;
+}
+.light img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.light h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.noise{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: -160px;
+    margin-left: 1000px;
+}
+.noise img{
+    width: 60px;
+    height: 60px;
+    margin: 24px;
+}
+.noise h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
