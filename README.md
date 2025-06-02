@@ -39,16 +39,14 @@ Coming soon...
 
 ## 📸 Screenshots
 
-_Add screenshots once sections are finalized_
+coming soon
 
 ## 🙌 Contributing
 
 This is a solo learning project, but feel free to fork it or suggest improvements via issues or pull requests!
 
-## 📄 License
 
-[MIT License](LICENSE)
 
 ---
 
-*Built with 💻 and curiosity by [Your Name]*
+*Built with 💻 and curiosity by [Arpan Mukherjee*
